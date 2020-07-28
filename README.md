@@ -1,6 +1,7 @@
 # Azure CustomNamespace Monitoring Extension
 
 ## Use Case
+### 1
 The extension collects metrics supported by Azure Monitor using the Azure management APIs and displays them in the AppDynamics Metric Browser. Please refer the link below for details on supported metrics.
 https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported
 
