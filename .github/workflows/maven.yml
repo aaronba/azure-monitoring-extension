@@ -20,12 +20,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Upload Artifact
     - uses: actions/upload-artifact@v2
       with:
-        name: name
+        name: azure-monitoring-extension
         path: azure-monitoring-extension/target/
       #azure-monitoring-extension/target/azure-custom-namespace-monitoring-extension.jar with /home/runner/work/azure-monitoring-extension/azure-monitoring-extension/target/azure-custom-namespace-monitoring-extension-1.0.0-shaded.jar
