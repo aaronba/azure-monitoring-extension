@@ -52,7 +52,7 @@ public class AuthenticationFactory {
         certAuthFilePath = accountCreds.getCertAuthFilePath();
 
         if (secret != null || !secret.equals("")) {
-            ApplicationTokenCredentials credentials = new ApplicationTokenCredentials(client, tenant, secret, AzureEnvironment.AZURE_GOVERNMENT);
+            ApplicationTokenCredentials credentials = new ApplicationTokenCredentials(client, tenant, secret, AzureEnvironment.AZURE_US_GOVERNMENT);
             return Azure.authenticate(credentials).withSubscription(subscriptionId);
         } else if (certAuthFilePath != null || !certAuthFilePath.equals("")) {
             return Azure.authenticate(new File(certAuthFilePath)).withSubscription(subscriptionId);
