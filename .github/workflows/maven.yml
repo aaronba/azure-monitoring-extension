@@ -30,5 +30,5 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: azure-monitoring-extension
-        path: azure-monitoring-extension/target/
+        path: target/
       #azure-monitoring-extension/target/azure-custom-namespace-monitoring-extension.jar with /home/runner/work/azure-monitoring-extension/azure-monitoring-extension/target/azure-custom-namespace-monitoring-extension-1.0.0-shaded.jar
